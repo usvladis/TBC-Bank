@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		217305722C5A422600D1AD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217305712C5A422600D1AD14 /* AppDelegate.swift */; };
 		217305742C5A422600D1AD14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217305732C5A422600D1AD14 /* SceneDelegate.swift */; };
-		217305762C5A422600D1AD14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217305752C5A422600D1AD14 /* ViewController.swift */; };
 		217305792C5A422600D1AD14 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 217305782C5A422600D1AD14 /* Base */; };
 		2173057B2C5A422800D1AD14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2173057A2C5A422800D1AD14 /* Assets.xcassets */; };
 		2173057E2C5A422800D1AD14 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2173057D2C5A422800D1AD14 /* Base */; };
+		21DB42E72C5BC97700D2E1BB /* EnterNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42E32C5BC97700D2E1BB /* EnterNumberViewController.swift */; };
+		21DB42E82C5BC97700D2E1BB /* EnterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42E42C5BC97700D2E1BB /* EnterPasswordViewController.swift */; };
+		21DB42E92C5BC97700D2E1BB /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42E52C5BC97700D2E1BB /* EnterViewController.swift */; };
+		21DB42F02C5BC9E800D2E1BB /* BankMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42EB2C5BC9E800D2E1BB /* BankMainViewController.swift */; };
+		21DB42F12C5BC9E800D2E1BB /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42EC2C5BC9E800D2E1BB /* ManageViewController.swift */; };
+		21DB42F22C5BC9E800D2E1BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42ED2C5BC9E800D2E1BB /* ProfileViewController.swift */; };
+		21DB42F32C5BC9E800D2E1BB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42EE2C5BC9E800D2E1BB /* WelcomeViewController.swift */; };
+		21DB42F72C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42F42C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift */; };
+		21DB42F82C5BD6D800D2E1BB /* ReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42F52C5BD6D800D2E1BB /* ReferenceViewController.swift */; };
+		21DB42FB2C5BDC3300D2E1BB /* GifExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42F92C5BDC3300D2E1BB /* GifExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2173056E2C5A422600D1AD14 /* TBC Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBC Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		217305712C5A422600D1AD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		217305732C5A422600D1AD14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		217305752C5A422600D1AD14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		217305782C5A422600D1AD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2173057A2C5A422800D1AD14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2173057D2C5A422800D1AD14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2173057F2C5A422800D1AD14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DB42E32C5BC97700D2E1BB /* EnterNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNumberViewController.swift; sourceTree = "<group>"; };
+		21DB42E42C5BC97700D2E1BB /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
+		21DB42E52C5BC97700D2E1BB /* EnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
+		21DB42EB2C5BC9E800D2E1BB /* BankMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankMainViewController.swift; sourceTree = "<group>"; };
+		21DB42EC2C5BC9E800D2E1BB /* ManageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
+		21DB42ED2C5BC9E800D2E1BB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		21DB42EE2C5BC9E800D2E1BB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		21DB42F42C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceLoaderViewController.swift; sourceTree = "<group>"; };
+		21DB42F52C5BD6D800D2E1BB /* ReferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceViewController.swift; sourceTree = "<group>"; };
+		21DB42F92C5BDC3300D2E1BB /* GifExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +58,10 @@
 		217305652C5A422600D1AD14 = {
 			isa = PBXGroup;
 			children = (
+				21DB42FA2C5BDC3300D2E1BB /* GifExtention */,
+				21DB42F62C5BD6D800D2E1BB /* Reference */,
+				21DB42EF2C5BC9E800D2E1BB /* BankMainViewController */,
+				21DB42E62C5BC97700D2E1BB /* AuthControllers */,
 				217305702C5A422600D1AD14 /* TBC Bank */,
 				2173056F2C5A422600D1AD14 /* Products */,
 			);
@@ -58,13 +80,50 @@
 			children = (
 				217305712C5A422600D1AD14 /* AppDelegate.swift */,
 				217305732C5A422600D1AD14 /* SceneDelegate.swift */,
-				217305752C5A422600D1AD14 /* ViewController.swift */,
 				217305772C5A422600D1AD14 /* Main.storyboard */,
 				2173057A2C5A422800D1AD14 /* Assets.xcassets */,
 				2173057C2C5A422800D1AD14 /* LaunchScreen.storyboard */,
 				2173057F2C5A422800D1AD14 /* Info.plist */,
 			);
 			path = "TBC Bank";
+			sourceTree = "<group>";
+		};
+		21DB42E62C5BC97700D2E1BB /* AuthControllers */ = {
+			isa = PBXGroup;
+			children = (
+				21DB42E32C5BC97700D2E1BB /* EnterNumberViewController.swift */,
+				21DB42E42C5BC97700D2E1BB /* EnterPasswordViewController.swift */,
+				21DB42E52C5BC97700D2E1BB /* EnterViewController.swift */,
+			);
+			path = AuthControllers;
+			sourceTree = "<group>";
+		};
+		21DB42EF2C5BC9E800D2E1BB /* BankMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21DB42EB2C5BC9E800D2E1BB /* BankMainViewController.swift */,
+				21DB42EC2C5BC9E800D2E1BB /* ManageViewController.swift */,
+				21DB42ED2C5BC9E800D2E1BB /* ProfileViewController.swift */,
+				21DB42EE2C5BC9E800D2E1BB /* WelcomeViewController.swift */,
+			);
+			path = BankMainViewController;
+			sourceTree = "<group>";
+		};
+		21DB42F62C5BD6D800D2E1BB /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				21DB42F42C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift */,
+				21DB42F52C5BD6D800D2E1BB /* ReferenceViewController.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		21DB42FA2C5BDC3300D2E1BB /* GifExtention */ = {
+			isa = PBXGroup;
+			children = (
+				21DB42F92C5BDC3300D2E1BB /* GifExtention.swift */,
+			);
+			path = GifExtention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217305762C5A422600D1AD14 /* ViewController.swift in Sources */,
+				21DB42F32C5BC9E800D2E1BB /* WelcomeViewController.swift in Sources */,
+				21DB42F72C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift in Sources */,
+				21DB42E72C5BC97700D2E1BB /* EnterNumberViewController.swift in Sources */,
 				217305722C5A422600D1AD14 /* AppDelegate.swift in Sources */,
+				21DB42E82C5BC97700D2E1BB /* EnterPasswordViewController.swift in Sources */,
+				21DB42FB2C5BDC3300D2E1BB /* GifExtention.swift in Sources */,
+				21DB42F02C5BC9E800D2E1BB /* BankMainViewController.swift in Sources */,
 				217305742C5A422600D1AD14 /* SceneDelegate.swift in Sources */,
+				21DB42F12C5BC9E800D2E1BB /* ManageViewController.swift in Sources */,
+				21DB42F22C5BC9E800D2E1BB /* ProfileViewController.swift in Sources */,
+				21DB42E92C5BC97700D2E1BB /* EnterViewController.swift in Sources */,
+				21DB42F82C5BD6D800D2E1BB /* ReferenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
