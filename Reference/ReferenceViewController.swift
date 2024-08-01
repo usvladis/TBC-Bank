@@ -28,28 +28,27 @@ class ReferenceViewController: UIViewController, UIScrollViewDelegate{
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -20),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
     
     func setUpImageView() {
-        guard let image = UIImage(named: "page_image") else { return } // Убедитесь, что у вас есть изображение с именем "your_image_name"
+        guard let image = UIImage(named: "page_image_1") else { return } // Убедитесь, что у вас есть изображение с именем "page_image_1"
         imageView.image = image
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(imageView)
         
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            imageView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            imageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 100),
             imageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            imageView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            imageView.heightAnchor.constraint(equalTo: view.heightAnchor)
+            imageView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: image.size.height * (view.bounds.width / image.size.width))
         ])
         
-        scrollView.contentSize = image.size
+        scrollView.contentSize = CGSize(width: view.bounds.width, height: image.size.height * (view.bounds.width / image.size.width))
     }
     
     // UIScrollViewDelegate method for zooming
