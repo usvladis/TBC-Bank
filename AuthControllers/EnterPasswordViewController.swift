@@ -15,12 +15,21 @@ class EnterPasswordViewController: UIViewController{
     let passwordLabel = UILabel()
     let nextButton = UIButton()
     
+    let imageView = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setUpView()
-        print("View Did Loaded")
-        // Do any additional setup after loading the view.
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.setUpFaceIDAnimation()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.circlesImageVies.image = UIImage(named: "circles_group_filled")
+            self.animateCircles()
+        }
     }
     
     func setUpView() {
@@ -80,6 +89,34 @@ class EnterPasswordViewController: UIViewController{
             nextButton.trailingAnchor.constraint(equalTo: nextButtonImageView.trailingAnchor),
             nextButton.topAnchor.constraint(equalTo: nextButtonImageView.topAnchor)
         ])
+    }
+    
+    func setUpFaceIDAnimation() {
+        guard let gifImage = UIImage.gif(name: "faceID") else { return } // Убедитесь, что у вас есть изображение с именем "face_id_animation"
+        imageView.image = gifImage
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            imageView.widthAnchor.constraint(equalToConstant: 100),
+            imageView.heightAnchor.constraint(equalToConstant: 100)
+        ])
+        
+        // Устанавливаем таймер для скрытия изображения после завершения анимации
+        let duration = gifImage.duration // Длительность анимации в секундах
+        Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(nextButtonTapped), userInfo: nil, repeats: false)
+    }
+    
+    func animateCircles() {
+        let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+        pulseAnimation.duration = 0.6
+        pulseAnimation.fromValue = 1.0
+        pulseAnimation.toValue = 1.2
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = 1
+        circlesImageVies.layer.add(pulseAnimation, forKey: "pulse")
     }
     
     @objc func nextButtonTapped() {

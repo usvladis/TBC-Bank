@@ -22,6 +22,7 @@
 		21DB42F72C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42F42C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift */; };
 		21DB42F82C5BD6D800D2E1BB /* ReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42F52C5BD6D800D2E1BB /* ReferenceViewController.swift */; };
 		21DB42FB2C5BDC3300D2E1BB /* GifExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB42F92C5BDC3300D2E1BB /* GifExtention.swift */; };
+		21DB42FD2C5BDD0C00D2E1BB /* faceID.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21DB42FC2C5BDD0C00D2E1BB /* faceID.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		21DB42F42C5BD6D800D2E1BB /* ReferenceLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceLoaderViewController.swift; sourceTree = "<group>"; };
 		21DB42F52C5BD6D800D2E1BB /* ReferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceViewController.swift; sourceTree = "<group>"; };
 		21DB42F92C5BDC3300D2E1BB /* GifExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifExtention.swift; sourceTree = "<group>"; };
+		21DB42FC2C5BDD0C00D2E1BB /* faceID.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = faceID.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		217305702C5A422600D1AD14 /* TBC Bank */ = {
 			isa = PBXGroup;
 			children = (
+				21DB42FC2C5BDD0C00D2E1BB /* faceID.gif */,
 				217305712C5A422600D1AD14 /* AppDelegate.swift */,
 				217305732C5A422600D1AD14 /* SceneDelegate.swift */,
 				217305772C5A422600D1AD14 /* Main.storyboard */,
@@ -186,6 +189,7 @@
 			files = (
 				2173057B2C5A422800D1AD14 /* Assets.xcassets in Resources */,
 				2173057E2C5A422800D1AD14 /* Base in Resources */,
+				21DB42FD2C5BDD0C00D2E1BB /* faceID.gif in Resources */,
 				217305792C5A422600D1AD14 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
