@@ -10,12 +10,14 @@ import UIKit
 class ReferenceViewController: UIViewController, UIScrollViewDelegate{
     let scrollView = UIScrollView()
     let imageView = UIImageView()
+    let shareButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setUpScrollView()
         setUpImageView()
+        setUpShareButton()
     }
     
     func setUpScrollView() {
@@ -49,6 +51,34 @@ class ReferenceViewController: UIViewController, UIScrollViewDelegate{
         ])
         
         scrollView.contentSize = CGSize(width: view.bounds.width, height: image.size.height * (view.bounds.width / image.size.width))
+    }
+    
+    func setUpShareButton() {
+        shareButton.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        
+        shareButton.tintColor = .white // Убедитесь, что у вас правильный цвет для изображения
+        
+        // Стиль для круглой кнопки
+        shareButton.backgroundColor = UIColor(named: "blueTBC")
+        shareButton.layer.cornerRadius = 30 // Половина от 60
+        shareButton.clipsToBounds = true
+        shareButton.translatesAutoresizingMaskIntoConstraints = false
+        shareButton.addTarget(self, action: #selector(shareButtonTapped), for: .touchUpInside)
+        view.addSubview(shareButton)
+        
+        NSLayoutConstraint.activate([
+            shareButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            shareButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            shareButton.heightAnchor.constraint(equalToConstant: 60),
+            shareButton.widthAnchor.constraint(equalToConstant: 60)
+        ])
+    }
+    
+    @objc func shareButtonTapped() {
+        guard let image = imageView.image else { return }
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     // UIScrollViewDelegate method for zooming
