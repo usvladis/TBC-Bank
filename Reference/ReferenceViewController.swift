@@ -36,6 +36,7 @@ class ReferenceViewController: UIViewController, UIScrollViewDelegate{
     }
     
     func setUpImageView() {
+        //После named: укажи в кавычках название изображения из Assets, которое будет на экране
         guard let image = UIImage(named: "page_image_1") else { return } // Убедитесь, что у вас есть изображение с именем "page_image_1"
         imageView.image = image
         imageView.contentMode = .scaleAspectFit
@@ -75,10 +76,23 @@ class ReferenceViewController: UIViewController, UIScrollViewDelegate{
     }
     
     @objc func shareButtonTapped() {
-        guard let image = imageView.image else { return }
-        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view
-        self.present(activityViewController, animated: true, completion: nil)
+        //После named: укажи в кавычках название изображения из Assets, которое будет экспортироваться
+        guard let image = UIImage(named: "page_image") else { return }
+        
+        let temporaryDirectoryURL = FileManager.default.temporaryDirectory
+        let fileURL = temporaryDirectoryURL.appendingPathComponent("TBCbank_statement_20.07.2024.png") //тут можешь указать любое название документа, главное в конце оставить .png
+        
+        
+        if let imageData = image.pngData() {
+            do {
+                try imageData.write(to: fileURL)
+                let activityViewController = UIActivityViewController(activityItems: [fileURL], applicationActivities: nil)
+                activityViewController.popoverPresentationController?.sourceView = self.view
+                self.present(activityViewController, animated: true, completion: nil)
+            } catch {
+                print("Не удалось сохранить изображение в файл: \(error)")
+            }
+        }
     }
     
     // UIScrollViewDelegate method for zooming
