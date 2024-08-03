@@ -77,10 +77,10 @@ class ReferenceViewController: UIViewController, UIScrollViewDelegate{
     
     @objc func shareButtonTapped() {
         //После named: укажи в кавычках название изображения из Assets, которое будет экспортироваться
-        guard let image = UIImage(named: "page_image") else { return }
+        guard let image = UIImage(named: "TBCbank_statement_03.08.2024") else { return }
         
         let temporaryDirectoryURL = FileManager.default.temporaryDirectory
-        let fileURL = temporaryDirectoryURL.appendingPathComponent("TBCbank_statement_20.07.2024.png") //тут можешь указать любое название документа, главное в конце оставить .png
+        let fileURL = temporaryDirectoryURL.appendingPathComponent("TBCbank_statement_03.08.2024.png") //тут можешь указать любое название документа, главное в конце оставить .png
         
         
         if let imageData = image.pngData() {
